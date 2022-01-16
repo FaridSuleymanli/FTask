@@ -13,8 +13,12 @@ namespace FrediTask.AutoMapper
         public AutoMapperProfile()
         {
             CreateMap<Category, CategoryGetDTO>().ReverseMap();
+            CreateMap<CategoryCreateDTO, Category>().ReverseMap();
+            CreateMap<CategoryUpdateDTO, Category>().ReverseMap();
 
             CreateMap<Product, ProductGetDTO>().ReverseMap();
+            CreateMap<ProductCreateDTO, Product>().ReverseMap();
+            CreateMap<ProductUpdateDTO, Product>().ReverseMap();
         }
     }
 }
